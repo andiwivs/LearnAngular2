@@ -9,16 +9,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var product_list_component_1 = require("./products/product-list.component");
 var AppComponent = (function () {
     function AppComponent() {
         this.pageTitle = "ACME Product Management";
     }
     AppComponent = __decorate([
         core_1.Component({
+            moduleId: module.id,
             selector: "pm-app",
-            template: "\n        <div>\n            <h1>{{pageTitle}}</h1>\n            <pm-products></pm-products>\n        </div>\n    ",
-            entryComponents: [product_list_component_1.ProductListComponent]
+            template: "\n        <div>\n            <h1>{{pageTitle}}</h1>\n            <pm-products></pm-products>\n        </div>\n    "
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

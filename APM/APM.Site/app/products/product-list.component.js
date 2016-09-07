@@ -14,8 +14,9 @@ var ProductListComponent = (function () {
     }
     ProductListComponent = __decorate([
         core_1.Component({
+            moduleId: module.id,
             selector: "pm-products",
-            templateUrl: "app/products/product-list.component.html"
+            template: "<h1>boo!</h1>"
         }), 
         __metadata('design:paramtypes', [])
     ], ProductListComponent);
