@@ -69,12 +69,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\app.component.css" />
+    <Content Include="app\assets\images\logo.jpg" />
+    <Content Include="app\home\welcome.component.html" />
     <Content Include="app\products\product-list.component.css" />
     <Content Include="app\products\product-list.component.html" />
     <Content Include="packages.config" />
     <Content Include="package.json" />
     <Content Include="tsconfig.json" />
     <Content Include="typings.json" />
+    <Content Include="api\products\products.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -93,9 +96,9 @@
   <ItemGroup>
     <TypeScriptCompile Include="app\app.component.ts" />
     <TypeScriptCompile Include="app\app.module.ts" />
+    <TypeScriptCompile Include="app\home\welcome.component.ts" />
     <TypeScriptCompile Include="app\main.ts" />
     <TypeScriptCompile Include="app\products\product-list.component.ts" />
-    <TypeScriptCompile Include="_ARCHIVE\app.component.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
