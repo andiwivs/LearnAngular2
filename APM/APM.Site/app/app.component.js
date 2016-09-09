@@ -8,7 +8,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
+var core_1 = require("@angular/core");
+//import { HttpModule } from "@angular/http";
+//import "rxjs/Rx"; // loads all features
+var product_service_1 = require("./products/product.service");
 var AppComponent = (function () {
     function AppComponent() {
         this.pageTitle = "ACME Product Management";
@@ -17,7 +20,8 @@ var AppComponent = (function () {
         core_1.Component({
             moduleId: module.id,
             selector: "pm-app",
-            template: "\n        <div>\n            <h1>{{ pageTitle }}</h1>\n            <pm-products></pm-products>\n        </div>\n    "
+            template: "\n        <div>\n            <h1>{{ pageTitle }}</h1>\n            <pm-products></pm-products>\n        </div>\n    ",
+            providers: [product_service_1.ProductService]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
