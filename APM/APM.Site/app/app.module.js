@@ -13,16 +13,21 @@ var platform_browser_1 = require("@angular/platform-browser");
 var forms_1 = require("@angular/forms"); // required for ngModel bindings in custom components
 var http_1 = require("@angular/http");
 var app_component_1 = require("./app.component");
+var app_routing_1 = require('./app.routing');
+var product_service_1 = require("./products/product.service");
 var star_component_1 = require("./shared/star.component");
-var product_list_component_1 = require("./products/product-list.component");
 var product_filter_pipe_1 = require("./products/product-filter.pipe");
+var welcome_component_1 = require("./home/welcome.component");
+var product_list_component_1 = require("./products/product-list.component");
+var product_detail_component_1 = require("./products/product-detail.component");
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, http_1.HttpModule],
-            declarations: [app_component_1.AppComponent, star_component_1.StarComponent, product_list_component_1.ProductListComponent, product_filter_pipe_1.ProductFilterPipe],
+            imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, http_1.HttpModule, app_routing_1.routing],
+            declarations: [app_component_1.AppComponent, star_component_1.StarComponent, product_filter_pipe_1.ProductFilterPipe, product_list_component_1.ProductListComponent, product_detail_component_1.ProductDetailComponent, welcome_component_1.WelcomeComponent, product_list_component_1.ProductListComponent],
+            providers: [product_service_1.ProductService, app_routing_1.appRoutingProviders],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])

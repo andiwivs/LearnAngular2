@@ -80,6 +80,7 @@
     <Content Include="tsconfig.json" />
     <Content Include="typings.json" />
     <Content Include="api\products\products.json" />
+    <Content Include="app\products\product-detail.component.html" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -98,8 +99,10 @@
   <ItemGroup>
     <TypeScriptCompile Include="app\app.component.ts" />
     <TypeScriptCompile Include="app\app.module.ts" />
+    <TypeScriptCompile Include="app\app.routing.ts" />
     <TypeScriptCompile Include="app\home\welcome.component.ts" />
     <TypeScriptCompile Include="app\main.ts" />
+    <TypeScriptCompile Include="app\products\product-detail.component.ts" />
     <TypeScriptCompile Include="app\products\product-filter.pipe.ts" />
     <TypeScriptCompile Include="app\products\product-list.component.ts" />
     <TypeScriptCompile Include="app\products\product.service.ts" />
