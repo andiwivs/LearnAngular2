@@ -1,29 +1,24 @@
 ﻿import { Injectable } from "@angular/core";
-//import { Http, Response } from "@angular/http";
-//import { Observable } from "rxjs/Observable";
+import { Http, Response } from "@angular/http";
+import { Observable } from "rxjs/Observable";
 import { IProduct } from "./product";
 
 @Injectable()
 export class ProductService {
-
-    /*
+        
     private _productUrl = "api/products/products.json";
-
+    
     constructor(private _http: Http) {}
 
+    /*
     getProducts(): Observable<IProduct[]> {
         return this._http.get(this._productUrl)
             .map((response: Response) => <IProduct[]>response.json())
             .do(data => console.log("All: " + JSON.stringify(data)))
             .catch(this.handleError);
     }
-
-    private handleError(error: Response) {
-        console.log(error);
-        return Observable.throw(error.json().error || "Server error");
-    }
     */
-
+        
     getProducts(): IProduct[] {
         return [
         {
@@ -47,5 +42,10 @@ export class ProductService {
             "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
         }
         ];
+    }
+
+    private handleError(error: Response) {
+        console.log(error);
+        return Observable.throw(error.json().error || "Server error");
     }
 }

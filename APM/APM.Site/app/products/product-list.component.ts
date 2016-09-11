@@ -17,6 +17,7 @@ export class ProductListComponent implements OnInit {
     imageWidth: number = 50;
     imageMargin: number = 2;
     products: IProduct[];
+    errorMessage: string;
 
     // constructor
     constructor(private _productService: ProductService) {
@@ -34,6 +35,14 @@ export class ProductListComponent implements OnInit {
 
     // component lifecycle event handler methods
     ngOnInit(): void {
+
         this.products = this._productService.getProducts();
+        /*
+        this.products = this._productService
+                                .getProducts()
+                                .subscribe(
+                                    products => this.products = products,
+                                    error => this.errorMessage = <any>error);
+        */
     }
 }

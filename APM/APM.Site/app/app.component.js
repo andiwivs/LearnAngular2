@@ -9,8 +9,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-//import { HttpModule } from "@angular/http";
-//import "rxjs/Rx"; // loads all features
 var product_service_1 = require("./products/product.service");
 var AppComponent = (function () {
     function AppComponent() {

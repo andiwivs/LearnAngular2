@@ -1,6 +1,4 @@
 ﻿import { Component } from "@angular/core";
-//import { HttpModule } from "@angular/http";
-//import "rxjs/Rx"; // loads all features
 
 import { ProductService } from "./products/product.service";
 
@@ -13,7 +11,7 @@ import { ProductService } from "./products/product.service";
             <pm-products></pm-products>
         </div>
     `,
-    providers: [ /*HttpModule,*/ ProductService ]
+    providers: [ ProductService ]
 })
 export class AppComponent {
     pageTitle: string = "ACME Product Management";
