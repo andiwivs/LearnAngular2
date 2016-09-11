@@ -1,5 +1,5 @@
 ﻿import { Component } from "@angular/core";
-//import { RouteSegment } from "@angular/router";
+import { Router } from "@angular/router";
 
 @Component({
     templateUrl: "./app/products/product-detail.component.html"
@@ -7,5 +7,9 @@
 export class ProductDetailComponent {
     pageTitle: string = "Product Detail";
 
-    //constructor(routeSegment: RouteSegment) {}
+    constructor(private _router: Router) {}
+
+    onBack(): void {
+        this._router.navigate(["/products"]);   
+    } 
 }
