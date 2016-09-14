@@ -5,15 +5,13 @@ import { WelcomeComponent } from "./home/welcome.component";
 import { ProductListComponent } from "./products/product-list.component";
 import { ProductDetailComponent } from "./products/product-detail.component";
 
-const appRoutes: Routes = [
-    { path: "", redirectTo: "/welcome", pathMatch: "full" },
-    { path: "welcome", component: WelcomeComponent,  },
+export const AppRoutes: Routes = [
+    { path: "", component: WelcomeComponent},
+    { path: "welcome", component: WelcomeComponent  },
     { path: "products", component: ProductListComponent },
     { path: "product/:id", component: ProductDetailComponent }
 ];
 
-export const appRoutingProviders: any[] = [
+export const AppRoutingProviders: any[] = [];
 
-];
-
-export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
+//export const routing: ModuleWithProviders = RouterModule.forRoot(AppRoutes);
